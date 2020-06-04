@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/fragment_home"
+    android:background="@drawable/centre_background"
+    android:focusableInTouchMode="true">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/personalDetailsCard"
+        style="@style/centreLocatorCardDesign"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="100dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Relation With number Owner"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/radioGrouprelation"
+                        android:orientation="vertical"
+                        >
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Self"
+                            android:id="@+id/radiobuttonSelf"
+                            />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Brother"
+                            android:id="@+id/radiobuttonBrother"
+                            />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Father"
+                            android:id="@+id/radiobuttonFather"
+                            />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mother"
+                            android:id="@+id/radiobuttonMother"
+                            />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sister"
+                            android:id="@+id/radiobuttonSister"
+                            />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cousin"
+                            android:id="@+id/radiobuttonCousin"
+                            />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Relatives"
+                            android:id="@+id/radiobuttonRelatives"
+                            />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Neighbour"
+                            android:id="@+id/radiobuttonNeighbour"
+                            />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unknown"
+                            android:id="@+id/radiobuttonUnknown"
+                            />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:id="@+id/lineardetails"
+                    >
+
+                    <EditText
+                        android:id="@+id/editText_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:hint="Name"
+                        android:letterSpacing="0.1"
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+                    <EditText
+                        android:id="@+id/editText_age"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:hint="Age"
+                        android:padding="10dp"
+                        android:inputType="number"
+                        android:letterSpacing="0.1"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+                    <EditText
+                        android:id="@+id/editText_sex"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:hint="Sex"
+                        android:padding="10dp"
+                        android:inputType="text"
+                        android:letterSpacing="0.1"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+                    <EditText
+                        android:id="@+id/editText_nidorbirthno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:hint="NID / Birth Reg No"
+                        android:padding="10dp"
+                        android:inputType="number"
+                        android:letterSpacing="0.1"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+
+
+                <View style="@style/Divider" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Symptom Appears "
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:id="@+id/radiogroupsymptompsappeardays"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        >
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_weight="0.3"
+                            android:layout_height="wrap_content"
+                            android:text="0-4 days"
+                            android:id="@+id/radiobuttonfourday"
+                            />
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_weight="0.3"
+                            android:layout_height="wrap_content"
+                            android:text="4-7 days "
+                            android:id="@+id/radiobuttonsevenday"
+                            />
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_weight="0.3"
+                            android:layout_height="wrap_content"
+                            android:text="7-14 days "
+                            android:id="@+id/radiobuttonfourteenday"
+                            />
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+
+
+                <View style="@style/Divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Return From Abroad / Meet with immigrant"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:id="@+id/radiogroupimmigrant"
+                        >
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_height="wrap_content"
+                            android:text="Yes"
+                            android:id="@+id/radiobuttonimmgrantyes"
+                            />
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_height="wrap_content"
+                            android:text="No"
+                            android:id="@+id/radiobuttonimmgrantno"
+                            />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <View style="@style/Divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Possible Places of Infection "
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:id="@+id/radiogroupInfectionPlace"
+                        >
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mosque"
+                            android:id="@+id/radiobuttonmosque"
+                            />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bazar"
+                            android:id="@+id/radiobuttonbazar"
+                            />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Office"
+                            android:id="@+id/radiobuttonoffice"
+                            />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Transport"
+                            android:id="@+id/radiobuttotransport"
+                            />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+
+                <View style="@style/Divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Most Common Symptoms"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                    <LinearLayout
+
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.checkbox.MaterialCheckBox
+                            android:layout_width="0dp"
+                            android:layout_weight="0.3"
+                            android:text="Fever"
+                            android:id="@+id/checkboxfever"
+                            android:layout_height="wrap_content"
+                            />
+                        <com.google.android.material.checkbox.MaterialCheckBox
+                            android:layout_width="0dp"
+                            android:layout_weight="0.3"
+                            android:text="Dry cough"
+                            android:id="@+id/checkboxdrycough"
+                            android:layout_height="wrap_content"
+                            />
+                        <com.google.android.material.checkbox.MaterialCheckBox
+                            android:layout_width="0dp"
+                            android:layout_weight="0.3"
+                            android:text="Tiredness"
+                            android:id="@+id/checkboxtiredness"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View style="@style/Divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Serious Symptoms"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                    <LinearLayout
+
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.checkbox.MaterialCheckBox
+                            android:layout_width="0dp"
+                            android:layout_weight="0.3"
+                            android:id="@+id/checkboxbreathdifficulty"
+                            android:text="Breathing Difficulty"
+                            android:layout_height="wrap_content"
+                            />
+                        <com.google.android.material.checkbox.MaterialCheckBox
+                            android:layout_width="0dp"
+                            android:layout_weight="0.3"
+                            android:text="Chest Pain or Pressure"
+                            android:id="@+id/checkboxchestpain"
+                            android:layout_height="wrap_content"
+                            />
+                        <com.google.android.material.checkbox.MaterialCheckBox
+                            android:layout_width="0dp"
+                            android:layout_weight="0.4"
+                            android:id="@+id/checkboxlossspeech"
+                            android:text="Loss of Speech or Movement"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View style="@style/Divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Covid 19 Tested ?"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:id="@+id/radiogroupcovid19tested"
+                        >
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_height="wrap_content"
+                            android:text="Yes"
+                            android:id="@+id/radiobuttoncovid19yes"
+                            />
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_height="wrap_content"
+                            android:text="No"
+
+                            android:id="@+id/radiobuttoncovid19no"
+                            />
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+                <View style="@style/Divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/lineardate"
+                    android:padding="10dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/startdate_layout">
+
+                        <EditText
+                            android:id="@+id/select_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="false"
+                            android:hint="Select a Date"
+                            android:gravity="center"
+                            android:layout_marginBottom="10dp"
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <View style="@style/Divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Other Disease"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.checkbox.MaterialCheckBox
+                            android:layout_width="wrap_content"
+                            android:text="Hypertension"
+                            android:id="@+id/checkboxhypertension"
+                            android:layout_height="wrap_content"
+                            />
+                        <com.google.android.material.checkbox.MaterialCheckBox
+                            android:layout_width="wrap_content"
+                            android:id="@+id/checkboxdiabetics"
+                            android:layout_below="@id/checkboxhypertension"
+                            android:text="Diabetics"
+                            android:layout_height="wrap_content"
+                            />
+                        <com.google.android.material.checkbox.MaterialCheckBox
+                            android:layout_width="wrap_content"
+                            android:id="@+id/checkboxheartdisease"
+                            android:layout_toRightOf="@id/checkboxhypertension"
+                            android:text="Heart Disease"
+                            android:layout_height="wrap_content"
+                            />
+                        <com.google.android.material.checkbox.MaterialCheckBox
+                            android:layout_width="wrap_content"
+                            android:id="@+id/checkboxneuro"
+                            android:text="Neuro Problem"
+                            android:layout_toRightOf="@id/checkboxdiabetics"
+                            android:layout_below="@id/checkboxheartdisease"
+                            android:layout_height="wrap_content"
+                            />
+                        <com.google.android.material.checkbox.MaterialCheckBox
+                            android:layout_width="wrap_content"
+                            android:text="Asma"
+                            android:id="@+id/checkboxasma"
+                            android:layout_toRightOf="@id/checkboxheartdisease"
+                            android:layout_height="wrap_content"
+                            />
+                        <com.google.android.material.checkbox.MaterialCheckBox
+                            android:layout_width="wrap_content"
+                            android:text="Cold Alergy"
+                            android:layout_below="@id/checkboxasma"
+                            android:layout_toRightOf="@id/checkboxneuro"
+                            android:id="@+id/checkboxcoldalergy"
+                            android:layout_height="wrap_content"
+                            />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/buttonsymtomp"
+                    android:text="Submit"
+                    android:textStyle="bold"
+                    android:padding="15dp"
+                    android:layout_margin="15dp"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rounded_edittext"/>
+
+            </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.core.widget.NestedScrollView>

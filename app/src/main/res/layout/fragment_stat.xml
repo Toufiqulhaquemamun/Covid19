@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.StatFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="50dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="Relation With number Owner"
+                                android:textColor="@android:color/black"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+                            <RadioGroup
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="vertical"
+                                >
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Self"
+                                    />
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Brother"
+                                    />
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Father"
+                                    />
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Mother"
+                                    />
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Sister"
+                                    />
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Cousin"
+                                    />
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Relatives"
+                                    />
+
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Neighbour"
+                                    />
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Unknown"
+                                    />
+                            </RadioGroup>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <View style="@style/Divider" />
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp"
+                            android:visibility="visible">
+
+                            <EditText
+                                android:id="@+id/editText_username"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#00000000"
+                                android:hint="Name"
+                                android:letterSpacing="0.1"
+                                android:inputType="text"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#00000000"
+                                android:hint="Age"
+                                android:padding="10dp"
+                                android:inputType="number"
+                                android:letterSpacing="0.1"
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#00000000"
+                                android:hint="Sex"
+                                android:padding="10dp"
+                                android:inputType="text"
+                                android:letterSpacing="0.1"
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#00000000"
+                                android:hint="NID / Birth Reg No"
+                                android:padding="10dp"
+                                android:inputType="number"
+                                android:letterSpacing="0.1"
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                    <View style="@style/Divider" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="Symptom Appears "
+                                android:textColor="@android:color/black"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+                            <RadioGroup
+                                android:layout_width="match_parent"
+                                android:weightSum="1"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal"
+                                >
+                                <RadioButton
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.3"
+                                    android:layout_height="wrap_content"
+                                    android:text="0-4 days"
+                                    />
+                                <RadioButton
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.3"
+                                    android:layout_height="wrap_content"
+                                    android:text="4-7 days "
+                                    />
+                                <RadioButton
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.3"
+                                    android:layout_height="wrap_content"
+                                    android:text="7-14 days "
+                                    />
+                            </RadioGroup>
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                    <View style="@style/Divider" />
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Return From Abroad / Meet with immigrant"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:weightSum="1"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            >
+                            <RadioButton
+                                android:layout_width="0dp"
+                                android:layout_weight="0.5"
+                                android:layout_height="wrap_content"
+                                android:text="Yes"
+
+                                />
+                            <RadioButton
+                                android:layout_width="0dp"
+                                android:layout_weight="0.5"
+                                android:layout_height="wrap_content"
+                                android:text="No"
+
+                                />
+                        </RadioGroup>
+
+                    </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <View style="@style/Divider" />
+                    <androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Possible Places of Infection "
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mosque"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bazar"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Office"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transport"
+                />
+
+        </RadioGroup>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+                    <View style="@style/Divider" />
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Most Common Symptoms"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                        <LinearLayout
+
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:weightSum="1"
+                            android:layout_height="wrap_content">
+                            <com.google.android.material.checkbox.MaterialCheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="0.3"
+                                android:text="Fever"
+                                android:layout_height="wrap_content"
+                                />
+                            <com.google.android.material.checkbox.MaterialCheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="0.3"
+                                android:text="Dry cough"
+                                android:layout_height="wrap_content"
+                                />
+                            <com.google.android.material.checkbox.MaterialCheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="0.3"
+                                android:text="Tiredness"
+                                android:layout_height="wrap_content"
+                                />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <View style="@style/Divider" />
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Serious Symptoms"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                        <LinearLayout
+
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:weightSum="1"
+                            android:layout_height="wrap_content">
+                            <com.google.android.material.checkbox.MaterialCheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="0.3"
+                                android:text="Breathing Difficulty"
+                                android:layout_height="wrap_content"
+                                />
+                            <com.google.android.material.checkbox.MaterialCheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="0.3"
+                                android:text="Chest Pain or Pressure"
+                                android:layout_height="wrap_content"
+                                />
+                            <com.google.android.material.checkbox.MaterialCheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="0.4"
+                                android:text="Loss of Speech or Movement"
+                                android:layout_height="wrap_content"
+                                />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <View style="@style/Divider" />
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Covid 19 Tested ?"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:weightSum="1"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            >
+                            <RadioButton
+                                android:layout_width="0dp"
+                                android:layout_weight="0.5"
+                                android:layout_height="wrap_content"
+                                android:text="Yes"
+
+                                />
+                            <RadioButton
+                                android:layout_width="0dp"
+                                android:layout_weight="0.5"
+                                android:layout_height="wrap_content"
+                                android:text="No"
+
+                                />
+                        </RadioGroup>
+
+
+                    </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <View style="@style/Divider" />
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/startdate_layout">
+
+                            <EditText
+                                android:id="@+id/start_date"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusable="false"
+                                android:hint="Select a Date"
+                                android:gravity="center"
+                                android:layout_marginBottom="10dp"
+                                />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <View style="@style/Divider" />
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Other Disease"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <com.google.android.material.checkbox.MaterialCheckBox
+                                android:layout_width="wrap_content"
+                                android:text="Hypertension"
+                                android:id="@+id/hypertension"
+                                android:layout_height="wrap_content"
+                                />
+                            <com.google.android.material.checkbox.MaterialCheckBox
+                                android:layout_width="wrap_content"
+                                android:id="@+id/diabetics"
+                                android:layout_below="@id/hypertension"
+                                android:text="Diabetics"
+                                android:layout_height="wrap_content"
+                                />
+                            <com.google.android.material.checkbox.MaterialCheckBox
+                                android:layout_width="wrap_content"
+                                android:id="@+id/heartdisease"
+                                android:layout_toRightOf="@id/hypertension"
+                                android:text="Heart Disease"
+                                android:layout_height="wrap_content"
+                                />
+                            <com.google.android.material.checkbox.MaterialCheckBox
+                                android:layout_width="wrap_content"
+                                android:id="@+id/neuro"
+                                android:text="Neuro Problem"
+                                android:layout_toRightOf="@id/diabetics"
+                                android:layout_below="@id/heartdisease"
+                                android:layout_height="wrap_content"
+                                />
+                            <com.google.android.material.checkbox.MaterialCheckBox
+                                android:layout_width="wrap_content"
+                                android:text="Asma"
+                                android:id="@+id/asma"
+                                android:layout_toRightOf="@id/heartdisease"
+                                android:layout_height="wrap_content"
+                                />
+                            <com.google.android.material.checkbox.MaterialCheckBox
+                                android:layout_width="wrap_content"
+                                android:text="Cold Alergy"
+                                android:layout_below="@id/asma"
+                                android:layout_toRightOf="@id/neuro"
+                                android:id="@+id/coldalergy"
+                                android:layout_height="wrap_content"
+                                />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>
