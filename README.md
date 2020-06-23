@@ -1,5 +1,5 @@
 # Covid19
-This app is mainly for data analysis , Where paitent, doctor , social worker and registered authorities and insert data.
+
 
  <img src="images/login.png" width="300" height="500" > <img src="images/register.png" width="300" height="500" > 
   <img src="images/home.png" width="300" height="500" > <img src="images/home2.png" width="300" height="500" >
